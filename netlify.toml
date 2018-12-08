@@ -1,8 +1,44 @@
+#  [[redirects]]
+# from = "/*"
+# to = "/index.html"
+# status = 200
+
+[[redirects]]
+from = "https://www.giesela.bot/*"
+to = "https://giesela.io/:splat"
+status = 301
+force = true
+headers = {X-From = "Giesela-Redirect"}
+[[redirects]]
+from = "http://www.giesela.bot/*"
+to = "https://giesela.io/:splat"
+status = 301
+force = true
+headers = {X-From = "Giesela-Redirect"}
+[[redirects]]
+from = "http://giesela.bot/*"
+to = "https://giesela.io/:splat"
+status = 301
+force = true
+headers = {X-From = "Giesela-Redirect"}
+[[redirects]]
+from = "https://giesela.bot/*"
+to = "https://giesela.io/:splat"
+status = 301
+force = true
+headers = {X-From = "Giesela-Redirect"}
+[[redirects]]
+from = "https://giesela.app/*"
+to = "https://giesela.io/:splat"
+status = 301
+force = true
+headers = {X-From = "Giesela-Redirect"}
+
 [[headers]]
 for = "/*"
 [headers.values]
 Access-Control-Allow-Origin = "*"
-Content-Security-Policy = "base-uri 'self'; default-src 'self'; style-src 'self' 'unsafe-inline' pro.fontawesome.com cookies.onetrust.mgr.consensu.org geolocation.onetrust.com cookiepro.blob.core.windows.net cdnjs.cloudflare.com fonts.googleapis.com use.typekit.net cdn.giesela.app; script-src 'self' 'sha256-5VrVgGfPbUH5IoPb+tGodpswZad/XDHQfqHeVD0LMG4=' 'sha256-w6HgTfoVOKRxhrt2tK6u8TPzundHyGzUVfulbJPks94=' 'sha256-ge8Xl79APcO3Tnx+f9itkH8nQFuk1VrvjyqxNsa+joo='  cookies.onetrust.mgr.consensu.org geolocation.onetrust.com privacyportal.cookiepro.com cookiepro.blob.core.windows.net pro.fontawesome.com cdnjs.cloudflare.com ajax.cloudflare.com use.typekit.net cdn.giesela.app; font-src 'self' pro.fontawesome.com fonts.gstatic.com cdn.giesela.app cookiepro.blob.core.windows.net use.typekit.net fonts.typekit.net; img-src 'self' cookiepro.blob.core.windows.net p.typekit.net cdn.giesela.app; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests; report-uri https://thesarogroup.report-uri.com/r/d/csp/enforce; report-to default"
+Content-Security-Policy = "base-uri 'self'; default-src 'self'; style-src 'self' 'unsafe-inline' pro.fontawesome.com cookies.onetrust.mgr.consensu.org geolocation.onetrust.com cookiepro.blob.core.windows.net cdnjs.cloudflare.com fonts.googleapis.com use.typekit.net cdn.giesela.app; script-src 'self' 'sha256-5VrVgGfPbUH5IoPb+tGodpswZad/XDHQfqHeVD0LMG4=' 'sha256-w6HgTfoVOKRxhrt2tK6u8TPzundHyGzUVfulbJPks94=' 'sha256-ge8Xl79APcO3Tnx+f9itkH8nQFuk1VrvjyqxNsa+joo=' 'sha256-8gRRF2SrVoH0MyQJkFBePZMkKOdUfaHC8HTsWKtT/WY=' code.jquery.com cookies.onetrust.mgr.consensu.org geolocation.onetrust.com privacyportal.cookiepro.com cookiepro.blob.core.windows.net pro.fontawesome.com cdnjs.cloudflare.com ajax.cloudflare.com use.typekit.net cdn.giesela.app; font-src 'self' pro.fontawesome.com fonts.gstatic.com cdn.giesela.app cookiepro.blob.core.windows.net use.typekit.net fonts.typekit.net; img-src 'self' data: cookiepro.blob.core.windows.net p.typekit.net cdn.giesela.app; object-src 'none'; 'frame-src' 'self' cookiepro.blob.core.windows.net; frame-ancestors 'self' cookiepro.blob.core.windows.net; upgrade-insecure-requests; report-uri https://thesarogroup.report-uri.com/r/d/csp/enforce; report-to default"
 Expect-CT = "enforce, max-age=604800, report-uri=\"http://thesarogroup.report-uri.com/r/d/ct/reportOnly\""
 Report-To = "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":[{\"url\":\"https://thesarogroup.report-uri.com/a/d/g\"}],\"include_subdomains\":true}"
 NEL = "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}"
